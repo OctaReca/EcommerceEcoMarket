@@ -67,7 +67,7 @@
             "id": 10,
             "nombre": "Carne",
             "precio": 900,
-            "img": "/img/Carne.jpg",
+            "img": "./img/Carne.jpg",
             "cantidad": 1
         },
         {
