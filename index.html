@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=local_mall" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Supermercado</title>
 </head>
 
 <body>
     <nav class="nav__container">
         <ul class="nav">
-            <a href="#"><li class="logo"></li></a>
+            <a href="#">
+                <li class="logo"></li>
+            </a>
             <li class="title"><a href="#">EcoMarket</a></li>
             <div class="shopping">
                 <div id="cart__icon" class="material-symbols-outlined">
@@ -26,11 +28,41 @@
     <div class="banner__container">
         <div class="banner">
             <h1>
-                <span class="letter">E</span><span class="letter">c</span><span class="letter">o</span><span class="letter">M</span><span class="letter">a</span><span class="letter">r</span><span class="letter">k</span><span class="letter">e</span><span class="letter">t</span>
+                <span class="letter">E</span><span class="letter">c</span><span class="letter">o</span><span
+                    class="letter">M</span><span class="letter">a</span><span class="letter">r</span><span
+                    class="letter">k</span><span class="letter">e</span><span class="letter">t</span>
             </h1>
             <p>El mejor lugar para hacer tus compras</p>
         </div>
     </div>
+
+    <!-- SearchBar -->
+
+    <div class="container__all">
+        <div class="search__container">
+            <input type="text" class="searchBar" placeholder="Buscar Productos...">
+            <button class="search"><span class="material-symbols-outlined" id="search">
+                    search
+                </span></button>
+            <button id="filter"><span class="material-symbols-outlined">
+                    filter_alt
+                </span></button>
+                <select id="select">
+                    <option value="all">Todo</option>
+                    <option value="Panadería" class="filtering__options">Panadería</option>
+                    <option value="Lácteos" class="filtering__options">Lácteos</option>
+                    <option value="Bebidas" class="filtering__options">Bebidas</option>
+                    <option value="Carnes" class="filtering__options">Carnes</option>
+                    <option value="Despensa" class="filtering__options">Despensa</option>
+                    <option value="Verduras" class="filtering__options">Verduras</option>
+                    <option value="Frutas" class="filtering__options">Frutas</option>
+                    <option value="Dulces" class="filtering__options">Dulces</option>
+                    <option value="Salsas" class="filtering__options">Salsas</option>
+                    <option value="Frutos Secos" class="filtering__options">Frutos Secos</option>
+                </select>
+        </div>
+    </div>
+
     <div id="shopContent" class="shopContent"></div>
 
     <!-- Modal Container -->

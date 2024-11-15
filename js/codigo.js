@@ -2,6 +2,8 @@ const shopContent = document.querySelector(".shopContent");
 const seeCart = document.getElementById("cart__icon");
 const modalContainer = document.querySelector(".modal__invisible");
 const cartValue = document.querySelector(".quantity");
+const filter = document.getElementById("filter");
+const selectElement = document.getElementById("select");
 const cart = [];
 
 // Función para crear publicaciones
@@ -20,7 +22,7 @@ const createPublications = (img, nombre, precio, id, cantidad) => {
 
     imagen.src = img;
     name.textContent = nombre;
-    price.textContent = precio;
+    price.textContent = `$${precio}`;
     button.textContent = "Comprar";
 
     button.addEventListener("click", () => {
@@ -75,7 +77,50 @@ const createPublication = async () => {
     shopContent.appendChild(documentFragment);
 };
 
+// Filter
+
+const filterProducts = async (category) => {
+    const request = await fetch("./data.json");
+    const content = await request.json();
+    const arr = content.content;
+
+    shopContent.innerHTML = "";
+
+    let filterProducts;
+    if(category === "all") {
+        filterProducts = arr;
+    } else {
+        filterProducts = arr.filter(product => product.category === category);
+    };
+
+    const documentFragment = document.createDocumentFragment();
+
+    for(const product of filterProducts) {
+        const newPublication = createPublications(
+            product.img,
+            product.nombre,
+            product.precio,
+            product.id,
+            product.cantidad
+        );
+        documentFragment.appendChild(newPublication);
+    };
+    shopContent.appendChild(documentFragment);
+};
+
 createPublication();
+
+selectElement.addEventListener("change", (e) => {
+    const selectedCategory = e.target.value;
+    filterProducts(selectedCategory);
+});
+
+filter.addEventListener("click", () => {
+    selectElement.classList.toggle("visible");
+});
+
+
+// SearchBar
 
 // Funcion para mostrar el carrito
 

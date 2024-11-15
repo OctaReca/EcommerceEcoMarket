@@ -145,6 +145,125 @@ body {
     transform: translateY(-20%);
 }
 
+/* SearchBar */
+
+.container__all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 500px;
+}
+
+.search__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #787;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #454;
+}
+
+.searchBar {
+    padding: 10px;
+    max-width: 600px;
+    min-width: 500px;
+    margin: 5px;
+    color: #343;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #454;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #343;
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #454;
+    transition: color 1s, background-color 1s;
+}
+
+#search {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.search:hover {
+    color: #fff;
+    background-color: #343;
+}
+
+/*Filter*/
+
+#filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343;
+    background-color: #fff;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 0 10px #454;
+    transition: color 1s, background-color 1s;
+}
+
+#filter:hover {
+    color: #fff;
+    background-color: #343;
+}
+
+#select {
+    display: none;
+    opacity: 0;
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #343;
+    appearance: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#select.visible {
+    display: block; 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#select option {
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #343;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#select option:checked {
+    background-color: #787;
+    color: white;
+}
+
 /*Shop Content*/
 
 .shopContent {
@@ -153,7 +272,7 @@ body {
     justify-content: space-around;
     width: 87%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .container {
