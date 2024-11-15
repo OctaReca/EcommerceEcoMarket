@@ -4,419 +4,419 @@
             "id": 1,
             "nombre": "Harina",
             "precio": 100,
-            "img": "../img/Harina.jpg",
+            "img": "./img/Harina.jpg",
             "cantidad": 1
         },
         {
             "id": 2,
             "nombre": "Pan",
             "precio": 150,
-            "img": "../img/Pan.jpg",
+            "img": "./img/Pan.jpg",
             "cantidad": 1
         },
         {
             "id": 3,
             "nombre": "Galletas",
             "precio": 200,
-            "img": "../img/Galletas.jpg",
+            "img": "./img/Galletas.jpg",
             "cantidad": 1
         },
         {
             "id": 4,
             "nombre": "Leche",
             "precio": 120,
-            "img": "../img/Leche.jpg",
+            "img": "./img/Leche.jpg",
             "cantidad": 1
         },
         {
             "id": 5,
             "nombre": "Cerveza",
             "precio": 300,
-            "img": "../img/Cerveza.jpg",
+            "img": "./img/Cerveza.jpg",
             "cantidad": 1
         },
         {
             "id": 6,
             "nombre": "Gaseosa",
             "precio": 180,
-            "img": "../img/Gaseosas.jpg",
+            "img": "./img/Gaseosas.jpg",
             "cantidad": 1
         },
         {
             "id": 7,
             "nombre": "Pescado",
             "precio": 800,
-            "img": "../img/Pescado.jpg",
+            "img": "./img/Pescado.jpg",
             "cantidad": 1
         },
         {
             "id": 8,
             "nombre": "Vino",
             "precio": 450,
-            "img": "../img/Vino.png",
+            "img": "./img/Vino.png",
             "cantidad": 1
         },
         {
             "id": 9,
             "nombre": "Pollo",
             "precio": 600,
-            "img": "../img/Pollo.jpg",
+            "img": "./img/Pollo.jpg",
             "cantidad": 1
         },
         {
             "id": 10,
             "nombre": "Carne",
             "precio": 900,
-            "img": "../img/Carne.jpg",
+            "img": "/img/Carne.jpg",
             "cantidad": 1
         },
         {
             "id": 11,
             "nombre": "Azúcar",
             "precio": 90,
-            "img": "../img/Azúcar.jpg",
+            "img": "./img/Azúcar.jpg",
             "cantidad": 1
         },
         {
             "id": 12,
             "nombre": "Arroz",
             "precio": 100,
-            "img": "../img/Arroz.jpg",
+            "img": "./img/Arroz.jpg",
             "cantidad": 1
         },
         {
             "id": 13,
             "nombre": "Fideos",
             "precio": 120,
-            "img": "../img/fideos.png",
+            "img": "./img/fideos.png",
             "cantidad": 1
         },
         {
             "id": 14,
             "nombre": "Aceite",
             "precio": 250,
-            "img": "../img/Aceite.jpg",
+            "img": "./img/Aceite.jpg",
             "cantidad": 1
         },
         {
             "id": 15,
             "nombre": "Manteca",
             "precio": 220,
-            "img": "../img/Manteca.jpg",
+            "img": "./img/Manteca.jpg",
             "cantidad": 1
         },
         {
             "id": 16,
             "nombre": "Queso",
             "precio": 400,
-            "img": "../img/Queso.jpg",
+            "img": "./img/Queso.jpg",
             "cantidad": 1
         },
         {
             "id": 17,
             "nombre": "Jamón",
             "precio": 350,
-            "img": "../img/Jamon.jpg",
+            "img": "./img/Jamon.jpg",
             "cantidad": 1
         },
         {
             "id": 18,
             "nombre": "Yogur",
             "precio": 90,
-            "img": "../img/Yogur.jpg",
+            "img": "./img/Yogur.jpg",
             "cantidad": 1
         },
         {
             "id": 19,
             "nombre": "Huevos",
             "precio": 250,
-            "img": "../img/Huevos.jpg",
+            "img": "./img/Huevos.jpg",
             "cantidad": 1
         },
         {
             "id": 20,
             "nombre": "Tomate",
             "precio": 80,
-            "img": "../img/Tomate.jpg",
+            "img": "./img/Tomate.jpg",
             "cantidad": 1
         },
         {
             "id": 21,
             "nombre": "Papa",
             "precio": 60,
-            "img": "../img/Papa.jpg",
+            "img": "./img/Papa.jpg",
             "cantidad": 1
         },
         {
             "id": 22,
             "nombre": "Cebolla",
             "precio": 50,
-            "img": "../img/Cebolla.jpg",
+            "img": "./img/Cebolla.jpg",
             "cantidad": 1
         },
         {
             "id": 23,
             "nombre": "Lechuga",
             "precio": 40,
-            "img": "../img/Lechuga.jpg",
+            "img": "./img/Lechuga.jpg",
             "cantidad": 1
         },
         {
             "id": 24,
             "nombre": "Manzana",
             "precio": 150,
-            "img": "../img/Manzana.jpg",
+            "img": "./img/Manzana.jpg",
             "cantidad": 1
         },
         {
             "id": 25,
             "nombre": "Banana",
             "precio": 100,
-            "img": "../img/Banana.jpg",
+            "img": "./img/Banana.jpg",
             "cantidad": 1
         },
         {
             "id": 26,
             "nombre": "Naranja",
             "precio": 80,
-            "img": "../img/Naranja.jpg",
+            "img": "./img/Naranja.jpg",
             "cantidad": 1
         },
         {
             "id": 27,
             "nombre": "Polenta",
             "precio": 60,
-            "img": "../img/Polenta.jpg",
+            "img": "./img/Polenta.jpg",
             "cantidad": 1
         },
         {
             "id": 28,
             "nombre": "Lentejas",
             "precio": 120,
-            "img": "../img/Lentejas.jpg",
+            "img": "./img/Lentejas.jpg",
             "cantidad": 1
         },
         {
             "id": 29,
             "nombre": "Chocolate",
             "precio": 200,
-            "img": "../img/Chocolate.jpg",
+            "img": "./img/Chocolate.jpg",
             "cantidad": 1
         },
         {
             "id": 30,
             "nombre": "Café",
             "precio": 250,
-            "img": "../img/Cafe.jpg",
+            "img": "./img/Cafe.jpg",
             "cantidad": 1
         }, {
             "id": 31,
             "nombre": "Té",
             "precio": 70,
-            "img": "../img/Te.jpg",
+            "img": "./img/Te.jpg",
             "cantidad": 1
         },
         {
             "id": 32,
             "nombre": "Mermelada",
             "precio": 120,
-            "img": "../img/Mermelada.jpg",
+            "img": "./img/Mermelada.jpg",
             "cantidad": 1
         },
         {
             "id": 33,
             "nombre": "Cereal",
             "precio": 200,
-            "img": "../img/Cereal.jpg",
+            "img": "./img/Cereal.jpg",
             "cantidad": 1
         },
         {
             "id": 34,
             "nombre": "Harina de Maíz",
             "precio": 90,
-            "img": "../img/HarinaDeMaiz.jpg",
+            "img": "./img/HarinaDeMaiz.jpg",
             "cantidad": 1
         },
         {
             "id": 35,
             "nombre": "Sal",
             "precio": 50,
-            "img": "../img/Sal.jpg",
+            "img": "./img/Sal.jpg",
             "cantidad": 1
         },
         {
             "id": 36,
             "nombre": "Mayonesa",
             "precio": 180,
-            "img": "../img/Mayonesa.jpg",
+            "img": "./img/Mayonesa.jpg",
             "cantidad": 1
         },
         {
             "id": 37,
             "nombre": "Ketchup",
             "precio": 150,
-            "img": "../img/Ketchup.jpg",
+            "img": "./img/Ketchup.jpg",
             "cantidad": 1
         },
         {
             "id": 38,
             "nombre": "Mostaza",
             "precio": 130,
-            "img": "../img/Mostaza.jpg",
+            "img": "./img/Mostaza.jpg",
             "cantidad": 1
         },
         {
             "id": 39,
             "nombre": "Cilantro",
             "precio": 20,
-            "img": "../img/Cilantro.jpg",
+            "img": "./img/Cilantro.jpg",
             "cantidad": 1
         },
         {
             "id": 40,
             "nombre": "Ajo",
             "precio": 30,
-            "img": "../img/Ajo.jpg",
+            "img": "./img/Ajo.jpg",
             "cantidad": 1
         },
         {
             "id": 41,
             "nombre": "Perejil",
             "precio": 25,
-            "img": "../img/Perejil.jpg",
+            "img": "./img/Perejil.jpg",
             "cantidad": 1
         },
         {
             "id": 42,
             "nombre": "Albahaca",
             "precio": 20,
-            "img": "../img/Albahaca.jpg",
+            "img": "./img/Albahaca.jpg",
             "cantidad": 1
         },
         {
             "id": 43,
             "nombre": "Pepino",
             "precio": 40,
-            "img": "../img/Pepino.jpg",
+            "img": "./img/Pepino.jpg",
             "cantidad": 1
         },
         {
             "id": 44,
             "nombre": "Zanahoria",
             "precio": 50,
-            "img": "../img/Zanahoria.jpg",
+            "img": "./img/Zanahoria.jpg",
             "cantidad": 1
         },
         {
             "id": 45,
             "nombre": "Espinaca",
             "precio": 60,
-            "img": "../img/Espinaca.jpg",
+            "img": "./img/Espinaca.jpg",
             "cantidad": 1
         },
         {
             "id": 46,
             "nombre": "Calabacín",
             "precio": 70,
-            "img": "../img/Calabacin.jpg",
+            "img": "./img/Calabacin.jpg",
             "cantidad": 1
         },
         {
             "id": 47,
             "nombre": "Sandía",
             "precio": 200,
-            "img": "../img/Sandia.jpg",
+            "img": "./img/Sandia.jpg",
             "cantidad": 1
         },
         {
             "id": 48,
             "nombre": "Melón",
             "precio": 180,
-            "img": "../img/Melon.jpg",
+            "img": "./img/Melon.jpg",
             "cantidad": 1
         },
         {
             "id": 49,
             "nombre": "Uvas",
             "precio": 150,
-            "img": "../img/Uvas.jpg",
+            "img": "./img/Uvas.jpg",
             "cantidad": 1
         },
         {
             "id": 50,
             "nombre": "Pera",
             "precio": 120,
-            "img": "../img/Pera.jpg",
+            "img": "./img/Pera.jpg",
             "cantidad": 1
         },
         {
             "id": 51,
             "nombre": "Durazno",
             "precio": 130,
-            "img": "../img/Durazno.jpg",
+            "img": "./img/Durazno.jpg",
             "cantidad": 1
         },
         {
             "id": 52,
             "nombre": "Ciruela",
             "precio": 140,
-            "img": "../img/Ciruela.jpg",
+            "img": "./img/Ciruela.jpg",
             "cantidad": 1
         },
         {
             "id": 53,
             "nombre": "Frutilla",
             "precio": 180,
-            "img": "../img/Frutilla.jpg",
+            "img": "./img/Frutilla.jpg",
             "cantidad": 1
         },
         {
             "id": 54,
             "nombre": "Mango",
             "precio": 160,
-            "img": "../img/Mango.jpg",
+            "img": "./img/Mango.jpg",
             "cantidad": 1
         },
         {
             "id": 55,
             "nombre": "Coco",
             "precio": 200,
-            "img": "../img/Coco.jpg",
+            "img": "./img/Coco.jpg",
             "cantidad": 1
         },
         {
             "id": 56,
             "nombre": "Piña",
             "precio": 170,
-            "img": "../img/Piña.jpg",
+            "img": "./img/Piña.jpg",
             "cantidad": 1
         },
         {
             "id": 57,
             "nombre": "Granada",
             "precio": 190,
-            "img": "../img/Granada.jpg",
+            "img": "./img/Granada.jpg",
             "cantidad": 1
         },
         {
             "id": 58,
             "nombre": "Avena",
             "precio": 100,
-            "img": "../img/Avena.jpg",
+            "img": "./img/Avena.jpg",
             "cantidad": 1
         },
         {
             "id": 59,
             "nombre": "Almendras",
             "precio": 250,
-            "img": "../img/Almendras.jpg",
+            "img": "./img/Almendras.jpg",
             "cantidad": 1
         },
         {
             "id": 60,
             "nombre": "Nueces",
             "precio": 300,
-            "img": "../img/Nueces.jpg",
+            "img": "./img/Nueces.jpg",
             "cantidad": 1
         }
     ]
