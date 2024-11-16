@@ -87,7 +87,7 @@ const filterProducts = async (category) => {
     shopContent.innerHTML = "";
 
     let filterProducts;
-    if(category === "all") {
+    if (category === "all") {
         filterProducts = arr;
     } else {
         filterProducts = arr.filter(product => product.category === category);
@@ -95,7 +95,7 @@ const filterProducts = async (category) => {
 
     const documentFragment = document.createDocumentFragment();
 
-    for(const product of filterProducts) {
+    for (const product of filterProducts) {
         const newPublication = createPublications(
             product.img,
             product.nombre,
@@ -129,20 +129,16 @@ const showCart = () => {
 
     const modalHeader = document.createElement("DIV");
     const modalButton = document.createElement("P");
-    const deleteall = document.createElement("BUTTON");
     const modalTitle = document.createElement("H2");
 
     modalHeader.classList.add("modal__header");
     modalButton.classList.add("modal__button");
-    deleteall.classList.add("delete__all");
     modalTitle.classList.add("modal__title");
 
     modalTitle.textContent = "Cart";
-    deleteall.textContent = "Delete All"
     modalButton.textContent = "X";
 
     modalHeader.appendChild(modalTitle);
-    modalHeader.appendChild(deleteall);
     modalHeader.appendChild(modalButton);
     modalContainer.appendChild(modalHeader);
 
@@ -206,11 +202,6 @@ const showCart = () => {
                 showCart();
             });
 
-            deleteall.addEventListener("click", () => {
-                cart.length = 0;
-                showCart();
-            });
-
             sumar.addEventListener("click", () => {
                 if (item.cantidad < 50) {
                     item.cantidad++;
@@ -253,20 +244,31 @@ const showCart = () => {
         const modalFooter = document.createElement("DIV");
         const checkout = document.createElement("P");
         const modalTotal = document.createElement("P");
+        const pDelete = document.createElement("SPAN");
 
         modalFooter.classList.add("modal__footer");
         checkout.classList.add("checkout");
         modalTotal.classList.add("modal__total");
+        pDelete.classList.add("pDelete");
 
         modalTotal.textContent = "Total: $" + total.toFixed(2);
         checkout.textContent = "Checkout";
+        pDelete.innerHTML = `Delete All: <span class="material-symbols-outlined" id="pDelete">
+        delete
+        </span>`
 
+        modalFooter.appendChild(pDelete);
         modalFooter.appendChild(checkout);
         modalFooter.appendChild(modalTotal);
         modalContainer.appendChild(modalFooter);
+
+        pDelete.addEventListener("click", () => {
+            cart.length = 0;
+            showCart();
+        });
     }
 
-    if(cart.length === 0) {
+    if (cart.length === 0) {
         cartValue.textContent = "0";
     } else {
         cartValue.textContent = cart.length;
@@ -280,7 +282,7 @@ const showCart = () => {
 };
 
 seeCart.addEventListener("click", () => {
-    if(modalContainer.classList.contains("modal__invisible")) {
+    if (modalContainer.classList.contains("modal__invisible")) {
         modalContainer.classList.replace("modal__invisible", "modal__visible");
         showCart();
     } else {

@@ -479,6 +479,85 @@
             "img": "./img/Nueces.jpg",
             "cantidad": 1,
             "category": "Frutos Secos"
+        },{
+            "id": 61,
+            "nombre": "Almendras",
+            "precio": 250,
+            "img": "./img/Almendras.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 62,
+            "nombre": "Avellanas",
+            "precio": 320,
+            "img": "./img/Avellanas.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 63,
+            "nombre": "Castañas",
+            "precio": 280,
+            "img": "./img/Castañas.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 64,
+            "nombre": "Pistachos",
+            "precio": 350,
+            "img": "./img/Pistachos.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 65,
+            "nombre": "Maní",
+            "precio": 120,
+            "img": "./img/Mani.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 66,
+            "nombre": "Anacardos",
+            "precio": 400,
+            "img": "./img/Anacardos.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 67,
+            "nombre": "Macadamias",
+            "precio": 500,
+            "img": "./img/Macadamias.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 68,
+            "nombre": "Pecanas",
+            "precio": 450,
+            "img": "./img/Pecanas.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 69,
+            "nombre": "Semillas de girasol",
+            "precio": 150,
+            "img": "./img/SemillasDeGirasol.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
+        },
+        {
+            "id": 70,
+            "nombre": "Semillas de calabaza",
+            "precio": 200,
+            "img": "./img/SemillasDeCalabaza.jpg",
+            "cantidad": 1,
+            "category": "Frutos Secos"
         }
     ]
 }

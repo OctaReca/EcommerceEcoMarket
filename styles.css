@@ -407,24 +407,6 @@ body {
     border-left: 3px solid #fff;
 }
 
-.delete__all {
-    border: none;
-    font-size: 1.8rem;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #454;
-    color: #fff;
-    cursor: pointer;
-    user-select: none;
-    box-shadow: 0 0 10px #454;
-    transition: color .7s, background-color .7s, box-shadow .7s;
-}
-
-.delete__all:hover {
-    -webkit-animation: vibrate-1 0.3s linear infinite both;
-    animation: vibrate-1 0.3s linear infinite both;
-}
-
 .modal__button {
     color: #343;
     margin: 10px;
@@ -545,15 +527,50 @@ body {
 /*MODAL FOOTER*/
 
 .modal__footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "deleteall deleteall"
+    "total checkout";
+    gap: 15px;
     background-color: #787;
     box-shadow: 0 0 5px #454;
     padding: 20px;
 }
 
+.pDelete {
+    grid-area: deleteall;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: red;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: color .7s, background-color .7s;
+}
+
+#pDelete {
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px;
+    transition: color .7s, background-color .7s;
+}
+
+#pDelete:hover {
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+    animation: vibrate-1 0.3s linear infinite both;
+}
+
 .modal__total {
+    grid-area: total;
     color: #fff;
     font-size: 1.4rem;
     font-weight: bold;
@@ -572,10 +589,11 @@ body {
 }
 
 .checkout {
-    color: #343;
+    grid-area: checkout;
+    color: #fff;
     font-size: 1.4rem;
     font-weight: bold;
-    background-color: #fff;
+    background-color: #343;
     padding: 20px;
     border-radius: 10px;
     transition: color .7s, background-color .7s;
@@ -584,8 +602,8 @@ body {
 }
 
 .checkout:hover {
-    color: #fff;
-    background-color: #343;
+    color: #343;
+    background-color: #fff;
 }
 
 
