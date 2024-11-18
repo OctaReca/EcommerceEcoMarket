@@ -29,6 +29,7 @@ body {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     list-style: none;
+    box-shadow: 0 0 10px #454;
 }
 
 .logo {
@@ -169,28 +170,33 @@ body {
     padding: 10px;
     max-width: 600px;
     min-width: 500px;
-    margin: 5px;
+    margin-left: 5px;
     color: #343;
     font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     box-shadow: 0 0 10px #454;
+}
+
+input[type="text"]:focus {
+    outline: none; 
 }
 
 .search {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #343;
-    background-color: #fff;
+    color: #fff;
+    background-color: #343;
     border: none;
-    padding: 8px;
-    margin-left: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 7.8px;
+    padding-left: 8.6px;
     margin-right: 6px;
-    border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0 0 10px #454;
     transition: color 1s, background-color 1s;
 }
 
@@ -200,8 +206,8 @@ body {
 }
 
 .search:hover {
-    color: #fff;
-    background-color: #343;
+    color: #343;
+    background-color: #fff;
 }
 
 /*Filter*/

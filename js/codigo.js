@@ -2,6 +2,7 @@ const shopContent = document.querySelector(".shopContent");
 const seeCart = document.getElementById("cart__icon");
 const modalContainer = document.querySelector(".modal__invisible");
 const cartValue = document.querySelector(".quantity");
+const searchBar = document.querySelector(".searchBar");
 const filter = document.getElementById("filter");
 const selectElement = document.getElementById("select");
 const cart = [];
@@ -77,6 +78,34 @@ const createPublication = async () => {
     shopContent.appendChild(documentFragment);
 };
 
+// SearchBar
+
+const handleSearch = async () => {
+    const request = await fetch("./data.json");
+    const content = await request.json();
+    const arr = content.content;
+
+    const searchTerm = searchBar.value.toLowerCase();
+    const filteredObjects = arr.filter((product) => product.nombre.toLowerCase().startsWith(searchTerm));
+
+    shopContent.innerHTML = "";
+
+    filteredObjects.forEach((product) => {
+        const newPublication = createPublications(
+            product.img,
+            product.nombre,
+            product.precio,
+            product.id,
+            product.cantidad
+        );
+        shopContent.appendChild(newPublication);
+    });
+};
+
+searchBar.addEventListener("input", handleSearch);
+
+searchBar.addEventListener("input", handleSearch);
+
 // Filter
 
 const filterProducts = async (category) => {
@@ -118,9 +147,6 @@ selectElement.addEventListener("change", (e) => {
 filter.addEventListener("click", () => {
     selectElement.classList.toggle("visible");
 });
-
-
-// SearchBar
 
 // Funcion para mostrar el carrito
 
@@ -244,7 +270,7 @@ const showCart = () => {
         const modalFooter = document.createElement("DIV");
         const checkout = document.createElement("P");
         const modalTotal = document.createElement("P");
-        const pDelete = document.createElement("SPAN");
+        const pDelete = document.createElement("P");
 
         modalFooter.classList.add("modal__footer");
         checkout.classList.add("checkout");
