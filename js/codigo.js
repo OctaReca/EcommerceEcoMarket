@@ -104,8 +104,6 @@ const handleSearch = async () => {
 
 searchBar.addEventListener("input", handleSearch);
 
-searchBar.addEventListener("input", handleSearch);
-
 // Filter
 
 const filterProducts = async (category) => {
